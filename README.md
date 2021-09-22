@@ -1,5 +1,14 @@
 # Getting Started with Create React App
 
+# PlayList
+* https://www.youtube.com/playlist?list=PLTv2Rbwcr_Cru7KIHcffE1Shg9X9Eix7a
+
+# Documentos
+* https://pt-br.reactjs.org/
+* npm i axios
+* npm i --save styled-components
+* npm install --save react-tabs
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

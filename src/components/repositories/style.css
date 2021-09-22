@@ -1,0 +1,38 @@
+@media (max-width: 575.98px) {
+  .wrapperTabPanel{
+    width: 100%;
+  }
+  .wrapperList{
+    width: 100%;
+  }
+  .repoItem{
+    
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 800px) { 
+  .wrapperTabPanel{
+    width: 100%;
+  }    
+  .wrapperList{
+    width: 100%;   
+  }
+ }
+
+
+@media (min-width: 801px) and (max-width: 1000px) { 
+  .wrapperTabPanel{
+    width: 100%;
+  }    
+  .wrapperList{
+    width: 100%;   
+  }
+
+}
+
+
+@media (min-width: 1001px) {  }
+
+
+@media (min-width: 1200px) {  }

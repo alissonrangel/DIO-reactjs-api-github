@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from "react";
+import Layout from "./components/layout";
+import Profile from "./components/profile";
+import Repositories from "./components/repositories";
+import NoSearch from "./components/no-search";
+import useGithub from "./hooks/github-hooks";
 
-function App() {
+function App0() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>      
+        <Layout>
+          <Profile />
+          <Repositories />
+        </Layout>      
+    </main>
   );
 }
+
+const App = () => {
+  const { githubState } = useGithub();
+
+  
+  console.log(githubState);    
+  
+
+  return (        
+    <Layout>
+      {githubState.hasUser ? (
+        <>
+          {githubState.loading ? (
+            <p>Loading</p>
+          ) : (
+            <>
+              <Profile />
+              <Repositories />
+            </>
+          )}
+        </>
+      ) : (
+        <NoSearch />
+      )}
+    </Layout>        
+  );
+};
 
 export default App;
