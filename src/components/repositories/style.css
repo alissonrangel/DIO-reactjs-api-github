@@ -21,18 +21,21 @@
  }
 
 
-@media (min-width: 801px) and (max-width: 1000px) { 
+@media (min-width: 801px) and (max-width: 1100px) { 
   .wrapperTabPanel{
     width: 100%;
   }    
   .wrapperList{
     width: 100%;   
   }
-
 }
 
 
-@media (min-width: 1001px) {  }
-
-
-@media (min-width: 1200px) {  }
+@media (min-width: 1101px) { 
+  .wrapperTabPanel{
+    width: 100%;
+  }    
+  .wrapperList{
+    width: 100%;   
+  }
+}
