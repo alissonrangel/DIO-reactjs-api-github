@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  
+  margin-bottom: 20px;
 `;
 
 export const WrapperStatusCount = styled.div`
   display: flex;
-  align-items: center;
+  align-items: center;  
   div {
     margin: 8px;
     text-align: center;
@@ -19,7 +19,7 @@ export const WrapperInfoUser = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   margin-left: 8px;
-  height: 200px;
+  //height: 150px;
 
   h1 {
     //font-size: 32px;
